@@ -5,7 +5,7 @@ Loadout script with player UID's or respect based with randomized weapon tiers.
 
 INSTALLATION:
 
-put this file inside a folder named custom and place it into your mission.map.pbo or if you already have a custom folder in your mission.map.pbo then just paste this file into it.
+Put the ExileServer_object_player_createBambi.sqf inside a folder named custom and place it into your mission.map.pbo or if you already have a custom folder in your mission.map.pbo then just paste this file into it.
 
 Next you need to add the following code to the custom code section of  your config.cpp file found in your mission.map.pbo. 
 
