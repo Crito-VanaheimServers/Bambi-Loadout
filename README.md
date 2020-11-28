@@ -1,5 +1,17 @@
 # Bambi-Loadout
+By Crito 11/27/2020
+
 Loadout script with player UID's or respect based with randomized weapon tiers.
+
+INSTALLATION:
+
+put this file inside a folder named custom and place it into your mission.map.pbo or if you already have a custom folder in your mission.map.pbo then just paste this file into it.
+
+Next you need to add the following code to the custom code section of  your config.cpp file found in your mission.map.pbo. 
+
+ExileServer_object_player_createBambi = "custom\ExileServer_object_player_createBambi.sqf";
+
+ABOUT THIS SCRIPT AND HOW IT ALL WORKS.
 
 In this script you will find 4 weapons tiers that you can change or add any weapons in each tier to your liking.
 Below the weapon tiers are 5 loaduts based on Player UID's. This is where you will put together a loadout that only 1 player is able to spawn in with and no one else.
