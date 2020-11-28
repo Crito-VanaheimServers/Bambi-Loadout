@@ -331,17 +331,17 @@ switch (true) do
     {
 	clearWeaponCargo _bambiPlayer; 
 	clearMagazineCargo _bambiPlayer;
-     _bambiPlayer forceAddUniform "Exile_Uniform_Woodland";
+     _bambiPlayer forceAddUniform "Exile_Uniform_BambiOverall";
 	 _bambiplayer addVest "V_Rangemaster_belt";
-	 [_bambiPlayer,_Tier1PrimaryWeapons,3] call bis_fnc_addWeapon; 	//3 defines how many magazines the player will spawn with. _Tier1PrimaryWeapons point to weapon tier 1 above.
+	 [_bambiPlayer,_Tier1PrimaryWeapons,5] call bis_fnc_addWeapon; 	//3 defines how many magazines the player will spawn with. _Tier1PrimaryWeapons point to weapon tier 1 above.
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
 	 _bambiPlayer addWeapon "ItemRadio";
 	 _bambiPlayer addWeapon "ItemGPS";
 	 _bambiplayer addItem "Exile_Item_InstaDoc";
-     _bambiplayer addItem  "Exile_Item_PlasticBottleCoffee";
-	 _bambiplayer addItem  "Exile_Item_EMRE";
+     _bambiplayer addItem "Exile_Item_PlasticBottleCoffee";
+	 _bambiplayer addItem "Exile_Item_EMRE";
      _bambiplayer addItem "Exile_Item_ExtensionCord";
     };
    
@@ -350,17 +350,19 @@ switch (true) do
     {
 	clearWeaponCargo _bambiPlayer; 
 	clearMagazineCargo _bambiPlayer;
-     _bambiPlayer forceAddUniform "Exile_Uniform_Woodland";
-	 _bambiplayer addVest "V_Rangemaster_belt";
-	 [_bambiPlayer,_Tier1PrimaryWeapons,3] call bis_fnc_addWeapon; 
+     _bambiPlayer forceAddUniform "Exile_Uniform_BambiOverall";
+	 _bambiplayer addVest "V_BandollierB_blk";
+	 [_bambiPlayer,_Tier1PrimaryWeapons,5] call bis_fnc_addWeapon;
+	 _bambiPlayer addPrimaryWeaponItem "acc_flashlight";	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
 	 _bambiPlayer addWeapon "ItemRadio";
 	 _bambiPlayer addWeapon "ItemGPS";
 	 _bambiplayer addItem "Exile_Item_InstaDoc";
-     _bambiplayer addItem  "Exile_Item_PlasticBottleCoffee";
-	 _bambiplayer addItem  "Exile_Item_EMRE";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+     _bambiplayer addItem "Exile_Item_PlasticBottleCoffee";
+	 _bambiplayer addItem "Exile_Item_EMRE";
      _bambiplayer addItem "Exile_Item_ExtensionCord";
     };
  
@@ -369,17 +371,22 @@ switch (true) do
     {
 	clearWeaponCargo _bambiPlayer; 
 	clearMagazineCargo _bambiPlayer;
-     _bambiPlayer forceAddUniform "Exile_Uniform_Woodland";
-	 _bambiplayer addVest "V_Rangemaster_belt";
-	 [_bambiPlayer,_Tier1PrimaryWeapons,3] call bis_fnc_addWeapon; 
+     _bambiPlayer forceAddUniform "Exile_Uniform_BambiOverall";
+	 _bambiplayer addVest "V_BandollierB_blk";
+	 _bambiPlayer addBackpack "B_AssaultPack_blk";
+	 [_bambiPlayer,_Tier1PrimaryWeapons,5] call bis_fnc_addWeapon; 
+	 _bambiPlayer addPrimaryWeaponItem "acc_flashlight";
+	 _bambiPlayer addPrimaryWeaponItem "optic_ACO_grn";
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
 	 _bambiPlayer addWeapon "ItemRadio";
 	 _bambiPlayer addWeapon "ItemGPS";
 	 _bambiplayer addItem "Exile_Item_InstaDoc";
-     _bambiplayer addItem  "Exile_Item_PlasticBottleCoffee";
-	 _bambiplayer addItem  "Exile_Item_EMRE";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+     _bambiplayer addItem "Exile_Item_PlasticBottleCoffee";
+	 _bambiplayer addItem "Exile_Item_EMRE";
      _bambiplayer addItem "Exile_Item_ExtensionCord";
     };
  
@@ -388,17 +395,24 @@ switch (true) do
     {
 	clearWeaponCargo _bambiPlayer; 
 	clearMagazineCargo _bambiPlayer;
-     _bambiPlayer forceAddUniform "Exile_Uniform_Woodland";
-	 _bambiplayer addVest "V_Rangemaster_belt";
-	 [_bambiPlayer,_Tier1PrimaryWeapons,3] call bis_fnc_addWeapon; 
+     _bambiPlayer forceAddUniform "Exile_Uniform_BambiOverall";
+	 _bambiplayer addVest "V_BandollierB_blk";
+	 _bambiPlayer addBackpack "B_AssaultPack_blk";
+	 [_bambiPlayer,_Tier1PrimaryWeapons,5] call bis_fnc_addWeapon;
+	 _bambiPlayer addPrimaryWeaponItem "acc_flashlight";
+	 _bambiPlayer addPrimaryWeaponItem "optic_ACO_grn";
+	 _bambiPlayer addPrimaryWeaponItem "muzzle_snds_M";
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
 	 _bambiPlayer addWeapon "ItemRadio";
 	 _bambiPlayer addWeapon "ItemGPS";
+	 _bambiPlayer addWeapon "Binocular";
 	 _bambiplayer addItem "Exile_Item_InstaDoc";
-     _bambiplayer addItem  "Exile_Item_PlasticBottleCoffee";
-	 _bambiplayer addItem  "Exile_Item_EMRE";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+     _bambiplayer addItem "Exile_Item_PlasticBottleCoffee";
+	 _bambiplayer addItem "Exile_Item_EMRE";
      _bambiplayer addItem "Exile_Item_ExtensionCord";
     };
  
@@ -407,17 +421,25 @@ switch (true) do
     {
 	clearWeaponCargo _bambiPlayer; 
 	clearMagazineCargo _bambiPlayer;
-     _bambiPlayer forceAddUniform "Exile_Uniform_Woodland";
-	 _bambiplayer addVest "V_Rangemaster_belt";
-	 [_bambiPlayer,_Tier1PrimaryWeapons,3] call bis_fnc_addWeapon; 
+     _bambiPlayer forceAddUniform "Exile_Uniform_BambiOverall";
+	 _bambiplayer addVest "V_BandollierB_blk";
+	 _bambiPlayer addBackpack "B_AssaultPack_blk";
+	 _bambiPlayer addHeadgear "H_HelmetB_plain_blk";
+	 [_bambiPlayer,_Tier1PrimaryWeapons,5] call bis_fnc_addWeapon;
+	 _bambiPlayer addPrimaryWeaponItem "acc_flashlight";
+	 _bambiPlayer addPrimaryWeaponItem "optic_ACO_grn";
+	 _bambiPlayer addPrimaryWeaponItem "muzzle_snds_M";	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
 	 _bambiPlayer addWeapon "ItemRadio";
 	 _bambiPlayer addWeapon "ItemGPS";
+	 _bambiPlayer addWeapon "Binocular";
 	 _bambiplayer addItem "Exile_Item_InstaDoc";
-     _bambiplayer addItem  "Exile_Item_PlasticBottleCoffee";
-	 _bambiplayer addItem  "Exile_Item_EMRE";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+     _bambiplayer addItem "Exile_Item_PlasticBottleCoffee";
+	 _bambiplayer addItem "Exile_Item_EMRE";
      _bambiplayer addItem "Exile_Item_ExtensionCord";
     };
 	
@@ -427,111 +449,152 @@ switch (true) do
 	clearWeaponCargo _bambiPlayer; 
 	clearMagazineCargo _bambiPlayer;
      _bambiPlayer forceAddUniform "Exile_Uniform_Woodland";
-	 _bambiplayer addVest "V_Rangemaster_belt";
-	 [_bambiPlayer,_Tier2PrimaryWeapons,3] call bis_fnc_addWeapon; 
+	 _bambiplayer addVest "V_PlateCarrier1_rgr";
+	 _bambiPlayer addBackpack "B_AssaultPack_blk";
+	 _bambiPlayer addHeadgear "H_HelmetB_plain_blk";
+	 [_bambiPlayer,_Tier2PrimaryWeapons,5] call bis_fnc_addWeapon;
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
 	 _bambiPlayer addWeapon "ItemRadio";
 	 _bambiPlayer addWeapon "ItemGPS";
+	 _bambiPlayer addWeapon "Binocular";
 	 _bambiplayer addItem "Exile_Item_InstaDoc";
-     _bambiplayer addItem  "Exile_Item_PlasticBottleCoffee";
-	 _bambiplayer addItem  "Exile_Item_EMRE";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+     _bambiplayer addItem "Exile_Item_PlasticBottleCoffee";
+	 _bambiplayer addItem "Exile_Item_EMRE";
      _bambiplayer addItem "Exile_Item_ExtensionCord";
     };
 	
     case (_Respect > 30000 && _Respect < 34999):
     //Hunter
     {
-	clearWeaponCargo _bambiPlayer; 
-	clearMagazineCargo _bambiPlayer;
      _bambiPlayer forceAddUniform "Exile_Uniform_Woodland";
-	 _bambiplayer addVest "V_Rangemaster_belt";
-	 [_bambiPlayer,_Tier2PrimaryWeapons,3] call bis_fnc_addWeapon; 
+	 _bambiplayer addVest "V_PlateCarrier1_rgr";
+	 _bambiPlayer addBackpack "B_AssaultPack_blk";
+	 _bambiPlayer addHeadgear "H_HelmetB_plain_blk";
+	 [_bambiPlayer,_Tier2PrimaryWeapons,5] call bis_fnc_addWeapon;
+	 _bambiPlayer addPrimaryWeaponItem "acc_flashlight";	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
 	 _bambiPlayer addWeapon "ItemRadio";
 	 _bambiPlayer addWeapon "ItemGPS";
+	 _bambiPlayer addWeapon "Rangefinder";
 	 _bambiplayer addItem "Exile_Item_InstaDoc";
-     _bambiplayer addItem  "Exile_Item_PlasticBottleCoffee";
-	 _bambiplayer addItem  "Exile_Item_EMRE";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+     _bambiplayer addItem "Exile_Item_PlasticBottleCoffee";
+	 _bambiplayer addItem "Exile_Item_EMRE";
      _bambiplayer addItem "Exile_Item_ExtensionCord";
     };
 	
     case (_Respect > 35000 && _Respect < 39999):
     //Worker
     {
-	clearWeaponCargo _bambiPlayer; 
-	clearMagazineCargo _bambiPlayer;
      _bambiPlayer forceAddUniform "Exile_Uniform_Woodland";
-	 _bambiplayer addVest "V_Rangemaster_belt";
-	 [_bambiPlayer,_Tier2PrimaryWeapons,3] call bis_fnc_addWeapon; 
+	 _bambiplayer addVest "V_PlateCarrier1_rgr";
+	 _bambiPlayer addBackpack "B_FieldPack_blk";
+	 _bambiPlayer addHeadgear "H_HelmetB_plain_blk";
+	 [_bambiPlayer,_Tier2PrimaryWeapons,5] call bis_fnc_addWeapon;
+	 _bambiPlayer addPrimaryWeaponItem "acc_flashlight";
+	 _bambiPlayer addPrimaryWeaponItem "optic_Arco_blk_F";	 	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
 	 _bambiPlayer addWeapon "ItemRadio";
 	 _bambiPlayer addWeapon "ItemGPS";
+	 _bambiPlayer addWeapon "Rangefinder";
 	 _bambiplayer addItem "Exile_Item_InstaDoc";
-     _bambiplayer addItem  "Exile_Item_PlasticBottleCoffee";
-	 _bambiplayer addItem  "Exile_Item_EMRE";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+     _bambiplayer addItem "Exile_Item_PlasticBottleCoffee";
+	 _bambiplayer addItem "Exile_Item_EMRE";
      _bambiplayer addItem "Exile_Item_ExtensionCord";
     };
 	
     case (_Respect > 40000 && _Respect < 44999):
     //Murderer
     {
-	clearWeaponCargo _bambiPlayer; 
-	clearMagazineCargo _bambiPlayer;
      _bambiPlayer forceAddUniform "Exile_Uniform_Woodland";
-	 _bambiplayer addVest "V_Rangemaster_belt";
-	 [_bambiPlayer,_Tier2PrimaryWeapons,3] call bis_fnc_addWeapon; 
+	 _bambiplayer addVest "V_PlateCarrier1_rgr";
+	 _bambiPlayer addBackpack "B_FieldPack_blk";
+	 _bambiPlayer addHeadgear "H_HelmetSpecB_paint2";
+	 [_bambiPlayer,_Tier2PrimaryWeapons,5] call bis_fnc_addWeapon;
+	 _bambiPlayer addPrimaryWeaponItem "acc_flashlight";
+	 _bambiPlayer addPrimaryWeaponItem "optic_Arco_blk_F";	
+	 _bambiPlayer addPrimaryWeaponItem "muzzle_snds_H";	 	  	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
 	 _bambiPlayer addWeapon "ItemRadio";
 	 _bambiPlayer addWeapon "ItemGPS";
+	 _bambiPlayer addWeapon "Rangefinder";
 	 _bambiplayer addItem "Exile_Item_InstaDoc";
-     _bambiplayer addItem  "Exile_Item_PlasticBottleCoffee";
-	 _bambiplayer addItem  "Exile_Item_EMRE";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+     _bambiplayer addItem "Exile_Item_PlasticBottleCoffee";
+	 _bambiplayer addItem "Exile_Item_EMRE";
      _bambiplayer addItem "Exile_Item_ExtensionCord";
     };
 	
     case (_Respect > 45000 && _Respect < 49999):
     //Prisoner
     {
-	clearWeaponCargo _bambiPlayer; 
-	clearMagazineCargo _bambiPlayer;
      _bambiPlayer forceAddUniform "Exile_Uniform_Woodland";
-	 _bambiplayer addVest "V_Rangemaster_belt";
-	 [_bambiPlayer,_Tier2PrimaryWeapons,3] call bis_fnc_addWeapon; 
+	 _bambiplayer addVest "V_PlateCarrier1_rgr";
+	 _bambiPlayer addBackpack "B_Carryall_cbr";
+	 _bambiPlayer addHeadgear "H_HelmetSpecB_paint2";
+	 [_bambiPlayer,_Tier2PrimaryWeapons,5] call bis_fnc_addWeapon;
+	 _bambiPlayer addPrimaryWeaponItem "acc_flashlight";
+	 _bambiPlayer addPrimaryWeaponItem "optic_Arco_blk_F";	
+	 _bambiPlayer addPrimaryWeaponItem "muzzle_snds_H";	 	  	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
 	 _bambiPlayer addWeapon "ItemRadio";
 	 _bambiPlayer addWeapon "ItemGPS";
+	 _bambiPlayer addWeapon "Rangefinder";
 	 _bambiplayer addItem "Exile_Item_InstaDoc";
-     _bambiplayer addItem  "Exile_Item_PlasticBottleCoffee";
-	 _bambiplayer addItem  "Exile_Item_EMRE";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+     _bambiplayer addItem "Exile_Item_PlasticBottleCoffee";
+	 _bambiplayer addItem "Exile_Item_EMRE";
      _bambiplayer addItem "Exile_Item_ExtensionCord";
     };
 	
     case (_Respect > 50000 && _Respect < 59999):
     //Prisoner
     {
-	clearWeaponCargo _bambiPlayer; 
-	clearMagazineCargo _bambiPlayer;
-     _bambiPlayer forceAddUniform "Exile_Uniform_Woodland";
-	 _bambiplayer addVest "V_Rangemaster_belt";
-	 [_bambiPlayer,_Tier3PrimaryWeapons,3] call bis_fnc_addWeapon; 
+     _bambiPlayer forceAddUniform "U_B_FullGhillie_ard";
+	 _bambiplayer addVest "V_PlateCarrier1_rgr";
+	 _bambiPlayer addBackpack "B_Carryall_cbr";
+	 _bambiPlayer addHeadgear "H_HelmetSpecB_paint2";
+	 [_bambiPlayer,_Tier3PrimaryWeapons,5] call bis_fnc_addWeapon;
+	 _bambiPlayer addItem "NVGoggles_INDEP";
+	 _bambiPlayer assignItem "NVGoggles_INDEP";	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
 	 _bambiPlayer addWeapon "ItemRadio";
 	 _bambiPlayer addWeapon "ItemGPS";
+	 _bambiPlayer addWeapon "Rangefinder";
 	 _bambiplayer addItem "Exile_Item_InstaDoc";
-     _bambiplayer addItem  "Exile_Item_PlasticBottleCoffee";
-	 _bambiplayer addItem  "Exile_Item_EMRE";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+     _bambiplayer addItem "Exile_Item_PlasticBottleCoffee";
+	 _bambiplayer addItem "Exile_Item_EMRE";
      _bambiplayer addItem "Exile_Item_ExtensionCord";
     };
 	
@@ -539,96 +602,162 @@ switch (true) do
     //KUT AK
     //Prisoner
     {
-	clearWeaponCargo _bambiPlayer; 
-	clearMagazineCargo _bambiPlayer;
-     _bambiPlayer forceAddUniform "Exile_Uniform_Woodland";
-	 _bambiplayer addVest "V_Rangemaster_belt";
-	 [_bambiPlayer,_Tier3PrimaryWeapons,3] call bis_fnc_addWeapon; 
+     _bambiPlayer forceAddUniform "U_B_FullGhillie_ard";
+	 _bambiplayer addVest "V_PlateCarrier1_rgr";
+	 _bambiPlayer addBackpack "B_Carryall_cbr";
+	 _bambiPlayer addHeadgear "H_HelmetSpecB_paint2";
+	 [_bambiPlayer,_Tier3PrimaryWeapons,5] call bis_fnc_addWeapon;
+	 _bambiPlayer addPrimaryWeaponItem "acc_pointer_IR";
+	 _bambiPlayer addItem "NVGoggles_INDEP";
+	 _bambiPlayer assignItem "NVGoggles_INDEP";	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
 	 _bambiPlayer addWeapon "ItemRadio";
 	 _bambiPlayer addWeapon "ItemGPS";
+	 _bambiPlayer addWeapon "Rangefinder";
 	 _bambiplayer addItem "Exile_Item_InstaDoc";
-     _bambiplayer addItem  "Exile_Item_PlasticBottleCoffee";
-	 _bambiplayer addItem  "Exile_Item_EMRE";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+     _bambiplayer addItem "Exile_Item_PlasticBottleCoffee";
+	 _bambiplayer addItem "Exile_Item_EMRE";
      _bambiplayer addItem "Exile_Item_ExtensionCord";
     };
 	
     case (_Respect > 70000 && _Respect < 79999):
     //Prisoner
     {
-	clearWeaponCargo _bambiPlayer; 
-	clearMagazineCargo _bambiPlayer;
-     _bambiPlayer forceAddUniform "Exile_Uniform_Woodland";
-	 _bambiplayer addVest "V_Rangemaster_belt";
-	 [_bambiPlayer,_Tier4PrimaryWeapons,3] call bis_fnc_addWeapon; 
+     _bambiPlayer forceAddUniform "U_B_FullGhillie_ard";
+	 _bambiplayer addVest "V_PlateCarrier1_rgr";
+	 _bambiPlayer addBackpack "B_Carryall_cbr";
+	 _bambiPlayer addHeadgear "H_HelmetLeaderO_ocamo";
+	 [_bambiPlayer,_Tier3PrimaryWeapons,5] call bis_fnc_addWeapon;
+	 _bambiPlayer addPrimaryWeaponItem "acc_pointer_IR";
+	 _bambiPlayer addPrimaryWeaponItem "optic_DMS";
+	 _bambiPlayer addItem "NVGoggles_INDEP";
+	 _bambiPlayer assignItem "NVGoggles_INDEP";	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
 	 _bambiPlayer addWeapon "ItemRadio";
 	 _bambiPlayer addWeapon "ItemGPS";
+	 _bambiPlayer addWeapon "Rangefinder";
 	 _bambiplayer addItem "Exile_Item_InstaDoc";
-     _bambiplayer addItem  "Exile_Item_PlasticBottleCoffee";
-	 _bambiplayer addItem  "Exile_Item_EMRE";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+     _bambiplayer addItem "Exile_Item_PlasticBottleCoffee";
+	 _bambiplayer addItem "Exile_Item_EMRE";
      _bambiplayer addItem "Exile_Item_ExtensionCord";
     };
 	
     case (_Respect > 80000 && _Respect < 89999):
     //Prisoner
     {
-	clearWeaponCargo _bambiPlayer; 
-	clearMagazineCargo _bambiPlayer;
-     _bambiPlayer forceAddUniform "Exile_Uniform_Woodland";
-	 _bambiplayer addVest "V_Rangemaster_belt";
-	 [_bambiPlayer,_Tier4PrimaryWeapons,3] call bis_fnc_addWeapon; 
+     _bambiPlayer forceAddUniform "U_B_FullGhillie_ard";
+	 _bambiplayer addVest "V_PlateCarrierGL_rgr";
+	 _bambiPlayer addBackpack "B_Carryall_cbr";
+	 _bambiPlayer addHeadgear "H_HelmetLeaderO_ocamo";
+	 [_bambiPlayer,_Tier4PrimaryWeapons,5] call bis_fnc_addWeapon;
+	 _bambiPlayer addPrimaryWeaponItem "acc_pointer_IR";
+	 _bambiPlayer addItem "NVGoggles_INDEP";
+	 _bambiPlayer assignItem "NVGoggles_INDEP";	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
 	 _bambiPlayer addWeapon "ItemRadio";
 	 _bambiPlayer addWeapon "ItemGPS";
+	 _bambiPlayer addWeapon "Rangefinder";
 	 _bambiplayer addItem "Exile_Item_InstaDoc";
-     _bambiplayer addItem  "Exile_Item_PlasticBottleCoffee";
-	 _bambiplayer addItem  "Exile_Item_EMRE";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+     _bambiplayer addItem "Exile_Item_PlasticBottleCoffee";
+	 _bambiplayer addItem "Exile_Item_EMRE";
      _bambiplayer addItem "Exile_Item_ExtensionCord";
     };
 	
     case (_Respect > 90000 && _Respect < 99999):
     //Prisoner
     {
-	clearWeaponCargo _bambiPlayer; 
-	clearMagazineCargo _bambiPlayer;
-     _bambiPlayer forceAddUniform "Exile_Uniform_Woodland";
-	 _bambiplayer addVest "V_Rangemaster_belt";
-	 [_bambiPlayer,_Tier4PrimaryWeapons,3] call bis_fnc_addWeapon; 
+     _bambiPlayer forceAddUniform "U_B_FullGhillie_ard";
+	 _bambiplayer addVest "V_PlateCarrierGL_rgr";
+	 _bambiPlayer addBackpack "B_Carryall_cbr";
+	 _bambiPlayer addHeadgear "H_HelmetLeaderO_ocamo";
+	 [_bambiPlayer,_Tier4PrimaryWeapons,5] call bis_fnc_addWeapon;
+	 _bambiPlayer addPrimaryWeaponItem "acc_pointer_IR";
+	 _bambiPlayer addPrimaryWeaponItem "optic_Nightstalker";
+	 _bambiPlayer addItem "NVGoggles_INDEP";
+	 _bambiPlayer assignItem "NVGoggles_INDEP";	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
 	 _bambiPlayer addWeapon "ItemRadio";
 	 _bambiPlayer addWeapon "ItemGPS";
+	 _bambiPlayer addWeapon "Rangefinder";
 	 _bambiplayer addItem "Exile_Item_InstaDoc";
-     _bambiplayer addItem  "Exile_Item_PlasticBottleCoffee";
-	 _bambiplayer addItem  "Exile_Item_EMRE";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+     _bambiplayer addItem "Exile_Item_PlasticBottleCoffee";
+	 _bambiplayer addItem "Exile_Item_EMRE";
      _bambiplayer addItem "Exile_Item_ExtensionCord";
     };
 	
     case (_Respect > 100000 && _Respect < 9999999):
     //Prisoner
     {
-	clearWeaponCargo _bambiPlayer; 
-	clearMagazineCargo _bambiPlayer;
-     _bambiPlayer forceAddUniform "Exile_Uniform_Woodland";
-	 _bambiplayer addVest "V_Rangemaster_belt";
-	 [_bambiPlayer,_Tier4PrimaryWeapons,3] call bis_fnc_addWeapon; 
+     _bambiPlayer forceAddUniform "U_B_FullGhillie_ard";
+	 _bambiplayer addVest "V_PlateCarrierGL_rgr";
+	 _bambiPlayer addBackpack "B_Carryall_cbr";
+	 _bambiPlayer addHeadgear "H_HelmetLeaderO_ocamo";
+	 [_bambiPlayer,_Tier4PrimaryWeapons,5] call bis_fnc_addWeapon;
+	 _bambiPlayer addPrimaryWeaponItem "acc_pointer_IR";
+	 _bambiPlayer addPrimaryWeaponItem "optic_Nightstalker";
+	 _bambiPlayer addItem "NVGoggles_INDEP";
+	 _bambiPlayer assignItem "NVGoggles_INDEP";	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
 	 _bambiPlayer addWeapon "ItemRadio";
 	 _bambiPlayer addWeapon "ItemGPS";
+	 _bambiPlayer addWeapon "Rangefinder";
 	 _bambiplayer addItem "Exile_Item_InstaDoc";
-     _bambiplayer addItem  "Exile_Item_PlasticBottleCoffee";
-	 _bambiplayer addItem  "Exile_Item_EMRE";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiplayer addItem "Exile_Item_InstaDoc";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+	 _bambiPlayer addItemToBackpack "HandGrenade";
+     _bambiplayer addItem "Exile_Item_PlasticBottleCoffee";
+	 _bambiplayer addItem "Exile_Item_EMRE";
      _bambiplayer addItem "Exile_Item_ExtensionCord";
+	 _bambiPlayer addItemToBackpack "Exile_Item_Wrench";
     };
 	
    default
