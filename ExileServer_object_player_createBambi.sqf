@@ -172,159 +172,169 @@ private _Tier4PrimaryWeapons = selectRandom
 												"MMG_02_black_F",
 												"srifle_GM6_F"			
 											];
-				
+
+
 switch (true) do 
 {
+
 //Loadouts by UID place the player UID in "PlacePlayerUIDHere" inside the quotations.
 
-//UID Loadout 1
-	if((getPlayerUID _requestingPlayer) in ["PlacePlayerUIDHere"]) then {
-		clearWeaponCargo _bambiPlayer; 
-		clearMagazineCargo _bambiPlayer;
-		_bambiPlayer forceAddUniform "U_O_FullGhillie_sard"; // adds uniforms
-		_bambiPlayer addVest "V_HarnessOGL_gry";
-		_bambiPlayer addWeapon "Exile_Item_XM8";
-		_bambiPlayer addWeapon "ItemCompass";
-		_bambiPlayer addWeapon "ItemMap";
-		_bambiPlayer addWeapon "ItemRadio";
-		_bambiPlayer addWeapon "ItemGPS";
-		_bambiPlayer addWeapon "Rangefinder";
-		_bambiPlayer addItem "NVGoggles_INDEP";
-		_bambiPlayer assignItem "NVGoggles_INDEP";
-		_bambiPlayer addBackpack "B_Carryall_cbr";
-		_bambiPlayer addItemToBackpack "HandGrenade";
-		_bambiPlayer addWeapon "srifle_GM6_camo_F";
-		_bambiPlayer addPrimaryWeaponItem "optic_KHS_blk";
-		_bambiPlayer addMagazines ["5Rnd_127x108_Mag", 4];
-		_bambiPlayer addWeapon "hgun_Pistol_heavy_01_F";
-		_bambiPlayer addHandgunItem "muzzle_snds_acp";
-		_bambiPlayer addMagazines ["11Rnd_45ACP_Mag", 3];
-		_bambiPlayer addItemToVest "Exile_Item_EMRE";
-		_bambiPlayer addItemToVest "Exile_Item_EnergyDrink";
-		_bambiPlayer addItemToVest "Exile_Item_InstaDoc";
-		_bambiPlayer addItemToVest "Exile_Item_DuctTape";
-		_bambiPlayer addItemToUniform "Exile_Item_Bandage";
-		_bambiPlayer addItemToBackpack "Exile_Item_Wrench";
-		};
-	
-//UID Loadout 2
-	if((getPlayerUID _requestingPlayer) in ["PlacePlayerUIDHere"]) then {
-		clearWeaponCargo _bambiPlayer; 
-		clearMagazineCargo _bambiPlayer;
-		_bambiPlayer forceAddUniform "U_O_FullGhillie_sard"; // adds uniforms
-		_bambiPlayer addVest "V_HarnessOGL_gry";
-		_bambiPlayer addWeapon "Exile_Item_XM8";
-		_bambiPlayer addWeapon "ItemCompass";
-		_bambiPlayer addWeapon "ItemMap";
-		_bambiPlayer addWeapon "ItemRadio";
-		_bambiPlayer addWeapon "ItemGPS";
-		_bambiPlayer addWeapon "Rangefinder";
-		_bambiPlayer addItem "NVGoggles_INDEP";
-		_bambiPlayer assignItem "NVGoggles_INDEP";
-		_bambiPlayer addBackpack "B_Carryall_cbr";
-		_bambiPlayer addItemToBackpack "HandGrenade";
-		_bambiPlayer addWeapon "srifle_GM6_camo_F";
-		_bambiPlayer addPrimaryWeaponItem "optic_KHS_blk";
-		_bambiPlayer addMagazines ["5Rnd_127x108_Mag", 4];
-		_bambiPlayer addWeapon "hgun_Pistol_heavy_01_F";
-		_bambiPlayer addHandgunItem "muzzle_snds_acp";
-		_bambiPlayer addMagazines ["11Rnd_45ACP_Mag", 3];
-		_bambiPlayer addItemToVest "Exile_Item_EMRE";
-		_bambiPlayer addItemToVest "Exile_Item_EnergyDrink";
-		_bambiPlayer addItemToVest "Exile_Item_InstaDoc";
-		_bambiPlayer addItemToVest "Exile_Item_DuctTape";
-		_bambiPlayer addItemToUniform "Exile_Item_Bandage";
-		_bambiPlayer addItemToBackpack "Exile_Item_Wrench";
-		};
+//UID Loadout 1									
+        if ((getPlayerUID _requestingPlayer) isEqualTo ("PlacePlayerUIDHere"))exitWith 
+        {
+			clearWeaponCargo _bambiPlayer; 
+			clearMagazineCargo _bambiPlayer;
+			_bambiPlayer forceAddUniform "U_O_FullGhillie_sard"; // adds uniforms
+			_bambiPlayer addVest "V_HarnessOGL_gry";
+			_bambiPlayer addWeapon "Exile_Item_XM8";
+			_bambiPlayer addWeapon "ItemCompass";
+			_bambiPlayer addWeapon "ItemMap";
+			_bambiPlayer addWeapon "ItemRadio";
+			_bambiPlayer addWeapon "ItemGPS";
+			_bambiPlayer addWeapon "Rangefinder";
+			_bambiPlayer addItem "NVGoggles_INDEP";
+			_bambiPlayer assignItem "NVGoggles_INDEP";
+			_bambiPlayer addBackpack "B_Carryall_cbr";
+			_bambiPlayer addItemToBackpack "HandGrenade";
+			_bambiPlayer addWeapon "srifle_GM6_camo_F";
+			_bambiPlayer addPrimaryWeaponItem "optic_KHS_blk";
+			_bambiPlayer addMagazines ["5Rnd_127x108_Mag", 3];
+			_bambiPlayer addWeapon "hgun_Pistol_heavy_01_F";
+			_bambiPlayer addHandgunItem "muzzle_snds_acp";
+			_bambiPlayer addMagazines ["11Rnd_45ACP_Mag", 3];
+			_bambiPlayer addItemToVest "Exile_Item_EMRE";
+			_bambiPlayer addItemToVest "Exile_Item_EnergyDrink";
+			_bambiPlayer addItemToVest "Exile_Item_InstaDoc";
+			_bambiPlayer addItemToVest "Exile_Item_DuctTape";
+			_bambiPlayer addItemToUniform "Exile_Item_Bandage";
+			_bambiPlayer addItemToBackpack "Exile_Item_Wrench";
+        };	
 
-//UID Loadout 3
-	if((getPlayerUID _requestingPlayer) in ["PlacePlayerUIDHere"]) then {
-		clearWeaponCargo _bambiPlayer; 
-		clearMagazineCargo _bambiPlayer;
-		_bambiPlayer forceAddUniform "U_O_FullGhillie_sard"; // adds uniforms
-		_bambiPlayer addVest "V_HarnessOGL_gry";
-		_bambiPlayer addWeapon "Exile_Item_XM8";
-		_bambiPlayer addWeapon "ItemCompass";
-		_bambiPlayer addWeapon "ItemMap";
-		_bambiPlayer addWeapon "ItemGPS";
-		_bambiPlayer addWeapon "Rangefinder";
-		_bambiPlayer addItem "NVGoggles_INDEP";
-		_bambiPlayer assignItem "NVGoggles_INDEP";
-		_bambiPlayer addBackpack "B_Carryall_cbr";
-		_bambiPlayer addItemToBackpack "HandGrenade";
-		_bambiPlayer addWeapon "LMG_Zafir_F";
-		_bambiPlayer addPrimaryWeaponItem "optic_DMS";
-		_bambiPlayer addMagazines ["150Rnd_762x54_Box_Tracer", 2];
-		_bambiPlayer addWeapon "hgun_Pistol_heavy_01_F";
-		_bambiPlayer addHandgunItem "muzzle_snds_acp";
-		_bambiPlayer addMagazines ["11Rnd_45ACP_Mag", 3];
-		_bambiPlayer addItemToVest "Exile_Item_EMRE";
-		_bambiPlayer addItemToVest "Exile_Item_EnergyDrink";
-		_bambiPlayer addItemToVest "Exile_Item_InstaDoc";
-		_bambiPlayer addItemToVest "Exile_Item_DuctTape";
-		_bambiPlayer addItemToUniform "Exile_Item_Bandage";
-		_bambiPlayer addItemToBackpack "Exile_Item_Wrench";
-		};
+//UID Loadout 2									
+        if ((getPlayerUID _requestingPlayer) isEqualTo ("PlacePlayerUIDHere"))exitWith 
+        {
+			clearWeaponCargo _bambiPlayer; 
+			clearMagazineCargo _bambiPlayer;
+			_bambiPlayer forceAddUniform "U_O_FullGhillie_sard"; // adds uniforms
+			_bambiPlayer addVest "V_HarnessOGL_gry";
+			_bambiPlayer addWeapon "Exile_Item_XM8";
+			_bambiPlayer addWeapon "ItemCompass";
+			_bambiPlayer addWeapon "ItemMap";
+			_bambiPlayer addWeapon "ItemRadio";
+			_bambiPlayer addWeapon "ItemGPS";
+			_bambiPlayer addWeapon "Rangefinder";
+			_bambiPlayer addItem "NVGoggles_INDEP";
+			_bambiPlayer assignItem "NVGoggles_INDEP";
+			_bambiPlayer addBackpack "B_Carryall_cbr";
+			_bambiPlayer addItemToBackpack "HandGrenade";
+			_bambiPlayer addWeapon "LMG_Zafir_F";
+			_bambiPlayer addPrimaryWeaponItem "optic_KHS_blk";
+			_bambiPlayer addMagazines ["150Rnd_762x54_Box", 3];
+			_bambiPlayer addWeapon "hgun_Pistol_heavy_01_F";
+			_bambiPlayer addHandgunItem "muzzle_snds_acp";
+			_bambiPlayer addMagazines ["11Rnd_45ACP_Mag", 3];
+			_bambiPlayer addItemToVest "Exile_Item_EMRE";
+			_bambiPlayer addItemToVest "Exile_Item_EnergyDrink";
+			_bambiPlayer addItemToVest "Exile_Item_InstaDoc";
+			_bambiPlayer addItemToVest "Exile_Item_DuctTape";
+			_bambiPlayer addItemToUniform "Exile_Item_Bandage";
+			_bambiPlayer addItemToBackpack "Exile_Item_Wrench";
+        };	
 		
-//UID Loadout 4
-	if((getPlayerUID _requestingPlayer) in ["PlacePlayerUIDHere"]) then {
-		clearWeaponCargo _bambiPlayer; 
-		clearMagazineCargo _bambiPlayer;
-		_bambiPlayer forceAddUniform "U_O_FullGhillie_sard"; // adds uniforms
-		_bambiPlayer addVest "V_HarnessOGL_gry";
-		_bambiPlayer addWeapon "Exile_Item_XM8";
-		_bambiPlayer addWeapon "ItemCompass";
-		_bambiPlayer addWeapon "ItemMap";
-		_bambiPlayer addWeapon "ItemGPS";
-		_bambiPlayer addWeapon "Rangefinder";
-		_bambiPlayer addItem "NVGoggles_INDEP";
-		_bambiPlayer assignItem "NVGoggles_INDEP";
-		_bambiPlayer addBackpack "B_Carryall_cbr";
-		_bambiPlayer addItemToBackpack "HandGrenade";
-		_bambiPlayer addWeapon "LMG_Zafir_F";
-		_bambiPlayer addPrimaryWeaponItem "optic_DMS";
-		_bambiPlayer addMagazines ["150Rnd_762x54_Box_Tracer", 2];
-		_bambiPlayer addWeapon "hgun_Pistol_heavy_01_F";
-		_bambiPlayer addHandgunItem "muzzle_snds_acp";
-		_bambiPlayer addMagazines ["11Rnd_45ACP_Mag", 3];
-		_bambiPlayer addItemToVest "Exile_Item_EMRE";
-		_bambiPlayer addItemToVest "Exile_Item_EnergyDrink";
-		_bambiPlayer addItemToVest "Exile_Item_InstaDoc";
-		_bambiPlayer addItemToVest "Exile_Item_DuctTape";
-		_bambiPlayer addItemToUniform "Exile_Item_Bandage";
-		_bambiPlayer addItemToBackpack "Exile_Item_Wrench";
-		};
-		
-//UID Loadout 5		
-	if((getPlayerUID _requestingPlayer) in ["PlacePlayerUIDHere"]) then {
-		clearWeaponCargo _bambiPlayer; 
-		clearMagazineCargo _bambiPlayer;
-		_bambiPlayer forceAddUniform "U_O_FullGhillie_sard"; // adds uniforms
-		_bambiPlayer addVest "V_HarnessOGL_gry";
-		_bambiPlayer addWeapon "Exile_Item_XM8";
-		_bambiPlayer addWeapon "ItemCompass";
-		_bambiPlayer addWeapon "ItemMap";
-		_bambiPlayer addWeapon "ItemRadio";
-		_bambiPlayer addWeapon "ItemGPS";
-		_bambiPlayer addWeapon "Rangefinder";
-		_bambiPlayer addItem "NVGoggles_INDEP";
-		_bambiPlayer assignItem "NVGoggles_INDEP";
-		_bambiPlayer addBackpack "B_Carryall_cbr";
-		_bambiPlayer addItemToBackpack "HandGrenade";
-		_bambiPlayer addWeapon "srifle_GM6_camo_F";
-		_bambiPlayer addPrimaryWeaponItem "optic_KHS_blk";
-		_bambiPlayer addMagazines ["5Rnd_127x108_Mag", 4];
-		_bambiPlayer addWeapon "hgun_Pistol_heavy_01_F";
-		_bambiPlayer addHandgunItem "muzzle_snds_acp";
-		_bambiPlayer addMagazines ["11Rnd_45ACP_Mag", 3];
-		_bambiPlayer addItemToVest "Exile_Item_EMRE";
-		_bambiPlayer addItemToVest "Exile_Item_EnergyDrink";
-		_bambiPlayer addItemToVest "Exile_Item_InstaDoc";
-		_bambiPlayer addItemToVest "Exile_Item_DuctTape";
-		_bambiPlayer addItemToUniform "Exile_Item_Bandage";
-		_bambiPlayer addItemToBackpack "Exile_Item_Wrench";
-	} else {
-	
+//UID Loadout 3									
+        if ((getPlayerUID _requestingPlayer) isEqualTo ("PlacePlayerUIDHere"))exitWith 
+        {
+			clearWeaponCargo _bambiPlayer; 
+			clearMagazineCargo _bambiPlayer;
+			_bambiPlayer forceAddUniform "U_O_FullGhillie_sard"; // adds uniforms
+			_bambiPlayer addVest "V_HarnessOGL_gry";
+			_bambiPlayer addWeapon "Exile_Item_XM8";
+			_bambiPlayer addWeapon "ItemCompass";
+			_bambiPlayer addWeapon "ItemMap";
+			_bambiPlayer addWeapon "ItemRadio";
+			_bambiPlayer addWeapon "ItemGPS";
+			_bambiPlayer addWeapon "Rangefinder";
+			_bambiPlayer addItem "NVGoggles_INDEP";
+			_bambiPlayer assignItem "NVGoggles_INDEP";
+			_bambiPlayer addBackpack "B_Carryall_cbr";
+			_bambiPlayer addItemToBackpack "HandGrenade";
+			_bambiPlayer addWeapon "srifle_GM6_camo_F";
+			_bambiPlayer addPrimaryWeaponItem "optic_KHS_blk";
+			_bambiPlayer addMagazines ["5Rnd_127x108_Mag", 3];
+			_bambiPlayer addWeapon "hgun_Pistol_heavy_01_F";
+			_bambiPlayer addHandgunItem "muzzle_snds_acp";
+			_bambiPlayer addMagazines ["11Rnd_45ACP_Mag", 3];
+			_bambiPlayer addItemToVest "Exile_Item_EMRE";
+			_bambiPlayer addItemToVest "Exile_Item_EnergyDrink";
+			_bambiPlayer addItemToVest "Exile_Item_InstaDoc";
+			_bambiPlayer addItemToVest "Exile_Item_DuctTape";
+			_bambiPlayer addItemToUniform "Exile_Item_Bandage";
+			_bambiPlayer addItemToBackpack "Exile_Item_Wrench";
+        };	
+
+//UID Loadout 4								
+        if ((getPlayerUID _requestingPlayer) isEqualTo ("PlacePlayerUIDHere"))exitWith 
+        {
+			clearWeaponCargo _bambiPlayer; 
+			clearMagazineCargo _bambiPlayer;
+			_bambiPlayer forceAddUniform "U_O_FullGhillie_sard"; // adds uniforms
+			_bambiPlayer addVest "V_HarnessOGL_gry";
+			_bambiPlayer addWeapon "Exile_Item_XM8";
+			_bambiPlayer addWeapon "ItemCompass";
+			_bambiPlayer addWeapon "ItemMap";
+			_bambiPlayer addWeapon "ItemRadio";
+			_bambiPlayer addWeapon "ItemGPS";
+			_bambiPlayer addWeapon "Rangefinder";
+			_bambiPlayer addItem "NVGoggles_INDEP";
+			_bambiPlayer assignItem "NVGoggles_INDEP";
+			_bambiPlayer addBackpack "B_Carryall_cbr";
+			_bambiPlayer addItemToBackpack "HandGrenade";
+			_bambiPlayer addWeapon "LMG_Zafir_F";
+			_bambiPlayer addPrimaryWeaponItem "optic_KHS_blk";
+			_bambiPlayer addMagazines ["150Rnd_762x54_Box", 3];
+			_bambiPlayer addWeapon "hgun_Pistol_heavy_01_F";
+			_bambiPlayer addHandgunItem "muzzle_snds_acp";
+			_bambiPlayer addMagazines ["11Rnd_45ACP_Mag", 3];
+			_bambiPlayer addItemToVest "Exile_Item_EMRE";
+			_bambiPlayer addItemToVest "Exile_Item_EnergyDrink";
+			_bambiPlayer addItemToVest "Exile_Item_InstaDoc";
+			_bambiPlayer addItemToVest "Exile_Item_DuctTape";
+			_bambiPlayer addItemToUniform "Exile_Item_Bandage";
+			_bambiPlayer addItemToBackpack "Exile_Item_Wrench";
+        };	
+
+//UID Loadout 5									
+        if ((getPlayerUID _requestingPlayer) isEqualTo ("PlacePlayerUIDHere"))exitWith 
+        {
+			clearWeaponCargo _bambiPlayer; 
+			clearMagazineCargo _bambiPlayer;
+			_bambiPlayer forceAddUniform "U_O_FullGhillie_sard"; // adds uniforms
+			_bambiPlayer addVest "V_HarnessOGL_gry";
+			_bambiPlayer addWeapon "Exile_Item_XM8";
+			_bambiPlayer addWeapon "ItemCompass";
+			_bambiPlayer addWeapon "ItemMap";
+			_bambiPlayer addWeapon "ItemRadio";
+			_bambiPlayer addWeapon "ItemGPS";
+			_bambiPlayer addWeapon "Rangefinder";
+			_bambiPlayer addItem "NVGoggles_INDEP";
+			_bambiPlayer assignItem "NVGoggles_INDEP";
+			_bambiPlayer addBackpack "B_Carryall_cbr";
+			_bambiPlayer addItemToBackpack "HandGrenade";
+			_bambiPlayer addWeapon "srifle_GM6_camo_F";
+			_bambiPlayer addPrimaryWeaponItem "optic_KHS_blk";
+			_bambiPlayer addMagazines ["5Rnd_127x108_Mag", 3];
+			_bambiPlayer addWeapon "hgun_Pistol_heavy_01_F";
+			_bambiPlayer addHandgunItem "muzzle_snds_acp";
+			_bambiPlayer addMagazines ["11Rnd_45ACP_Mag", 3];
+			_bambiPlayer addItemToVest "Exile_Item_EMRE";
+			_bambiPlayer addItemToVest "Exile_Item_EnergyDrink";
+			_bambiPlayer addItemToVest "Exile_Item_InstaDoc";
+			_bambiPlayer addItemToVest "Exile_Item_DuctTape";
+			_bambiPlayer addItemToUniform "Exile_Item_Bandage";
+			_bambiPlayer addItemToBackpack "Exile_Item_Wrench";
+        };	
+
+
 //If players are not given a loadout by UID number they will automatically be given loadouts below this line based on how much respect they have.	
    case (_Respect > 0 && _Respect < 4999):
    //Bambi
@@ -773,7 +783,6 @@ switch (true) do
      _bambiplayer addMagazines ["30Rnd_556x45_Stanag", 5];
      _bambiPlayer addWeapon "arifle_Mk20_plain_F";
      };
-	};
 };
 
 if((canTriggerDynamicSimulation _bambiPlayer) isEqualTo false) then 
