@@ -131,8 +131,8 @@ else
     _spawnType = 0;
 };
 
-//Weapon Tier is to randomize what weapon the player spawns in with.
-//if you change the weapons in these weapon tiers make sure all the weapons will be able to use the type of attachments you are using in the loadout your putting them in.
+//Weapon Tier, Suppressor tier and optics is to randomize what weapon and its attachments the player spawns in with.
+//If a weapon that does not support an attachment is added to the tiers it is ok the attachment will be ignored.
 //if using the weapon tiers code found in the respect based loadouts below do not define ammo because it is automatically coded to give the ammo specific to the random gun players end up with.
 private _Tier1PrimaryWeapons = selectRandom
 											[		//5.56mm
@@ -140,8 +140,14 @@ private _Tier1PrimaryWeapons = selectRandom
 												"arifle_TRG20_F",
 												"arifle_SPAR_01_blk_F",				
 												"Exile_Weapon_M16A4",
-												"Exile_Weapon_M4"		
+												"Exile_Weapon_M4"
 											];	
+											
+private _Tier1Suppressors = selectRandom
+											[
+												"muzzle_snds_M"
+											];
+				
 	
 private _Tier2PrimaryWeapons = selectRandom
 											[		//6.5mm
@@ -151,6 +157,12 @@ private _Tier2PrimaryWeapons = selectRandom
 												"srifle_DMR_07_blk_F",
 												"arifle_ARX_blk_F"
 											];
+											
+private _Tier2Suppressors = selectRandom	
+											[
+												"muzzle_snds_H"
+											];
+											
 											
 private _Tier3PrimaryWeapons = selectRandom
 											[		//7.62mm
@@ -164,80 +176,107 @@ private _Tier3PrimaryWeapons = selectRandom
 												"Exile_Weapon_PKP"
 											];
 
+private _Tier3Suppressors = selectRandom	
+											[
+												"muzzle_snds_B",
+												"muzzle_snds_H_MG_blk_F"
+											];
+
+
 private _Tier4PrimaryWeapons = selectRandom
 											[	//Random High Calib.
 												"srifle_DMR_05_hex_F",
 												"MMG_01_tan_F",
 												"srifle_DMR_02_F",
 												"MMG_02_black_F",
-												"srifle_GM6_F"			
+												"srifle_GM6_F"
+											];
+											
+private _Tier4Suppressors = selectRandom	
+											[
+												"muzzle_snds_93mmg",
+												"muzzle_snds_338_black"
 											];
 
+private _RndmOptic = selectRandom 
+											[
+												"optic_AMS",
+												"optic_DMS",
+												"optic_Arco_blk_F",
+												"optic_Hamr",
+												"optic_LRPS",
+												"optic_KHS_blk",
+												"optic_Nightstalker",
+												"optic_Yorris",
+												"optic_ERCO_blk_F",
+												"optic_SOS",
+												"optic_ACO_grn"
+											];
 
 switch (true) do 
 {
 
 //Loadouts by UID place the player UID in "PlacePlayerUIDHere" inside the quotations.
 
-//UID Loadout 1									
-        if ((getPlayerUID _requestingPlayer) isEqualTo ("PlacePlayerUIDHere"))exitWith 
+//UID Loadout 1												//Wullf
+        if ((getPlayerUID _requestingPlayer) isEqualTo ("76561198144781827"))exitWith 
         {
 			clearWeaponCargo _bambiPlayer; 
 			clearMagazineCargo _bambiPlayer;
-			_bambiPlayer forceAddUniform "U_O_FullGhillie_sard"; // adds uniforms
-			_bambiPlayer addVest "V_HarnessOGL_gry";
+			_bambiPlayer forceAddUniform "U_B_Protagonist_VR"; // adds uniforms
+			_bambiPlayer addVest "V_PlateCarrierGL_blk";
+			_bambiPlayer addBackpack "B_ViperHarness_blk_F";
+			_bambiPlayer addHeadgear "H_HelmetO_ViperSP_ghex_F";
+			[_bambiPlayer,"srifle_DMR_05_blk_F",5] call bis_fnc_addWeapon;
+			_bambiPlayer addPrimaryWeaponItem "muzzle_snds_93mmg";
+			_bambiPlayer addPrimaryWeaponItem "bipod_01_F_blk";
+			_bambiPlayer addPrimaryWeaponItem "optic_LRPS";
+			[_bambiPlayer,"hgun_ACPC2_F",2] call bis_fnc_addWeapon;
 			_bambiPlayer addWeapon "Exile_Item_XM8";
 			_bambiPlayer addWeapon "ItemCompass";
 			_bambiPlayer addWeapon "ItemMap";
 			_bambiPlayer addWeapon "ItemRadio";
 			_bambiPlayer addWeapon "ItemGPS";
-			_bambiPlayer addWeapon "Rangefinder";
-			_bambiPlayer addItem "NVGoggles_INDEP";
-			_bambiPlayer assignItem "NVGoggles_INDEP";
-			_bambiPlayer addBackpack "B_Carryall_cbr";
-			_bambiPlayer addItemToBackpack "HandGrenade";
-			_bambiPlayer addWeapon "srifle_GM6_camo_F";
-			_bambiPlayer addPrimaryWeaponItem "optic_KHS_blk";
-			_bambiPlayer addMagazines ["5Rnd_127x108_Mag", 3];
-			_bambiPlayer addWeapon "hgun_Pistol_heavy_01_F";
-			_bambiPlayer addHandgunItem "muzzle_snds_acp";
-			_bambiPlayer addMagazines ["11Rnd_45ACP_Mag", 3];
-			_bambiPlayer addItemToVest "Exile_Item_EMRE";
-			_bambiPlayer addItemToVest "Exile_Item_EnergyDrink";
+			_bambiPlayer addItemToUniform "Exile_Item_PlasticBottleCoffee";
+			_bambiPlayer addItemToUniform "Exile_Item_EMRE";
+			_bambiPlayer addItemToUniform "Exile_Item_BeefParts";
+			_bambiPlayer addItemToUniform "Exile_Item_BeefParts";
+			_bambiPlayer addItemToVest "Exile_Item_Defibrillator";
 			_bambiPlayer addItemToVest "Exile_Item_InstaDoc";
-			_bambiPlayer addItemToVest "Exile_Item_DuctTape";
-			_bambiPlayer addItemToUniform "Exile_Item_Bandage";
-			_bambiPlayer addItemToBackpack "Exile_Item_Wrench";
-        };	
+			_bambiPlayer addItemToVest "Exile_Item_InstaDoc";
+			_bambiPlayer addItemToVest "Exile_Item_Wrench";
+			_bambiPlayer addItemToVest "Exile_Item_ExtensionCord";
+		};	
 
-//UID Loadout 2									
-        if ((getPlayerUID _requestingPlayer) isEqualTo ("PlacePlayerUIDHere"))exitWith 
+//UID Loadout 2												//Kooter
+        if ((getPlayerUID _requestingPlayer) isEqualTo ("76561198396847748"))exitWith
         {
 			clearWeaponCargo _bambiPlayer; 
 			clearMagazineCargo _bambiPlayer;
 			_bambiPlayer forceAddUniform "U_O_FullGhillie_sard"; // adds uniforms
-			_bambiPlayer addVest "V_HarnessOGL_gry";
+			_bambiPlayer addVest "V_PlateCarrierGL_blk";
+			_bambiPlayer addBackpack "B_Carryall_khk";
+			_bambiPlayer addHeadgear "H_HelmetO_ViperSP_ghex_F";
 			_bambiPlayer addWeapon "Exile_Item_XM8";
 			_bambiPlayer addWeapon "ItemCompass";
 			_bambiPlayer addWeapon "ItemMap";
 			_bambiPlayer addWeapon "ItemRadio";
 			_bambiPlayer addWeapon "ItemGPS";
 			_bambiPlayer addWeapon "Rangefinder";
-			_bambiPlayer addItem "NVGoggles_INDEP";
-			_bambiPlayer assignItem "NVGoggles_INDEP";
-			_bambiPlayer addBackpack "B_Carryall_cbr";
-			_bambiPlayer addItemToBackpack "HandGrenade";
-			_bambiPlayer addWeapon "LMG_Zafir_F";
-			_bambiPlayer addPrimaryWeaponItem "optic_KHS_blk";
-			_bambiPlayer addMagazines ["150Rnd_762x54_Box", 3];
-			_bambiPlayer addWeapon "hgun_Pistol_heavy_01_F";
-			_bambiPlayer addHandgunItem "muzzle_snds_acp";
-			_bambiPlayer addMagazines ["11Rnd_45ACP_Mag", 3];
-			_bambiPlayer addItemToVest "Exile_Item_EMRE";
-			_bambiPlayer addItemToVest "Exile_Item_EnergyDrink";
-			_bambiPlayer addItemToVest "Exile_Item_InstaDoc";
-			_bambiPlayer addItemToVest "Exile_Item_DuctTape";
-			_bambiPlayer addItemToUniform "Exile_Item_Bandage";
+			[_bambiPlayer,"MMG_02_black_F",5] call bis_fnc_addWeapon;
+			[_bambiPlayer,"hgun_ACPC2_F",2] call bis_fnc_addWeapon;
+			_bambiPlayer addHandgunItem "acc_flashlight_pistol";
+			_bambiPlayer addItemToBackpack "MineDetector";
+			_bambiPlayer addItemToBackpack "Exile_Item_InstaDoc";
+			_bambiPlayer addItemToBackpack "Exile_Item_InstaDoc";
+			_bambiPlayer addItemToBackpack "Exile_Item_InstaDoc";
+			_bambiPlayer addItemToBackpack "Exile_Item_InstaDoc";
+			_bambiPlayer addItemToBackpack "Exile_Item_Defibrillator";
+			_bambiPlayer addItemToBackpack "Exile_Item_EMRE";
+			_bambiPlayer addItemToBackpack "Exile_Item_EMRE";
+			_bambiPlayer addItemToBackpack "Exile_Item_PlasticBottleCoffee";
+			_bambiPlayer addItemToBackpack "Exile_Item_PlasticBottleCoffee";
+			_bambiPlayer addItemToBackpack "Exile_Item_ExtensionCord";
 			_bambiPlayer addItemToBackpack "Exile_Item_Wrench";
         };	
 		
@@ -386,7 +425,7 @@ switch (true) do
 	 _bambiPlayer addBackpack "B_AssaultPack_blk";
 	 [_bambiPlayer,_Tier1PrimaryWeapons,5] call bis_fnc_addWeapon; 
 	 _bambiPlayer addPrimaryWeaponItem "acc_flashlight";
-	 _bambiPlayer addPrimaryWeaponItem "optic_ACO_grn";
+	 _bambiPlayer addPrimaryWeaponItem _RndmOptic;
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
@@ -410,8 +449,8 @@ switch (true) do
 	 _bambiPlayer addBackpack "B_AssaultPack_blk";
 	 [_bambiPlayer,_Tier1PrimaryWeapons,5] call bis_fnc_addWeapon;
 	 _bambiPlayer addPrimaryWeaponItem "acc_flashlight";
-	 _bambiPlayer addPrimaryWeaponItem "optic_ACO_grn";
-	 _bambiPlayer addPrimaryWeaponItem "muzzle_snds_M";
+	 _bambiPlayer addPrimaryWeaponItem _RndmOptic;
+	 _bambiPlayer addPrimaryWeaponItem _Tier1Suppressors;
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
@@ -437,8 +476,8 @@ switch (true) do
 	 _bambiPlayer addHeadgear "H_HelmetB_plain_blk";
 	 [_bambiPlayer,_Tier1PrimaryWeapons,5] call bis_fnc_addWeapon;
 	 _bambiPlayer addPrimaryWeaponItem "acc_flashlight";
-	 _bambiPlayer addPrimaryWeaponItem "optic_ACO_grn";
-	 _bambiPlayer addPrimaryWeaponItem "muzzle_snds_M";	 
+	 _bambiPlayer addPrimaryWeaponItem _RndmOptic;
+	 _bambiPlayer addPrimaryWeaponItem _Tier1Suppressors;	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
@@ -510,7 +549,7 @@ switch (true) do
 	 _bambiPlayer addHeadgear "H_HelmetB_plain_blk";
 	 [_bambiPlayer,_Tier2PrimaryWeapons,5] call bis_fnc_addWeapon;
 	 _bambiPlayer addPrimaryWeaponItem "acc_flashlight";
-	 _bambiPlayer addPrimaryWeaponItem "optic_Arco_blk_F";	 	 
+	 _bambiPlayer addPrimaryWeaponItem _RndmOptic;	 	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
@@ -535,8 +574,8 @@ switch (true) do
 	 _bambiPlayer addHeadgear "H_HelmetSpecB_paint2";
 	 [_bambiPlayer,_Tier2PrimaryWeapons,5] call bis_fnc_addWeapon;
 	 _bambiPlayer addPrimaryWeaponItem "acc_flashlight";
-	 _bambiPlayer addPrimaryWeaponItem "optic_Arco_blk_F";	
-	 _bambiPlayer addPrimaryWeaponItem "muzzle_snds_H";	 	  	 
+	 _bambiPlayer addPrimaryWeaponItem _RndmOptic;	
+	 _bambiPlayer addPrimaryWeaponItem _Tier2Suppressors;	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
@@ -561,8 +600,8 @@ switch (true) do
 	 _bambiPlayer addHeadgear "H_HelmetSpecB_paint2";
 	 [_bambiPlayer,_Tier2PrimaryWeapons,5] call bis_fnc_addWeapon;
 	 _bambiPlayer addPrimaryWeaponItem "acc_flashlight";
-	 _bambiPlayer addPrimaryWeaponItem "optic_Arco_blk_F";	
-	 _bambiPlayer addPrimaryWeaponItem "muzzle_snds_H";	 	  	 
+	 _bambiPlayer addPrimaryWeaponItem _RndmOptic;	
+	 _bambiPlayer addPrimaryWeaponItem _Tier2Suppressors;	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
 	 _bambiPlayer addWeapon "ItemCompass";
 	 _bambiPlayer addWeapon "ItemMap";
@@ -618,6 +657,7 @@ switch (true) do
 	 _bambiPlayer addHeadgear "H_HelmetSpecB_paint2";
 	 [_bambiPlayer,_Tier3PrimaryWeapons,5] call bis_fnc_addWeapon;
 	 _bambiPlayer addPrimaryWeaponItem "acc_pointer_IR";
+	 _bambiPlayer addPrimaryWeaponItem _Tier3Suppressors;	 
 	 _bambiPlayer addItem "NVGoggles_INDEP";
 	 _bambiPlayer assignItem "NVGoggles_INDEP";	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
@@ -648,7 +688,8 @@ switch (true) do
 	 _bambiPlayer addHeadgear "H_HelmetLeaderO_ocamo";
 	 [_bambiPlayer,_Tier3PrimaryWeapons,5] call bis_fnc_addWeapon;
 	 _bambiPlayer addPrimaryWeaponItem "acc_pointer_IR";
-	 _bambiPlayer addPrimaryWeaponItem "optic_DMS";
+	 _bambiPlayer addPrimaryWeaponItem _Tier3Suppressors;	 
+	 _bambiPlayer addPrimaryWeaponItem _RndmOptic;
 	 _bambiPlayer addItem "NVGoggles_INDEP";
 	 _bambiPlayer assignItem "NVGoggles_INDEP";	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
@@ -712,7 +753,7 @@ switch (true) do
 	 _bambiPlayer addHeadgear "H_HelmetLeaderO_ocamo";
 	 [_bambiPlayer,_Tier4PrimaryWeapons,5] call bis_fnc_addWeapon;
 	 _bambiPlayer addPrimaryWeaponItem "acc_pointer_IR";
-	 _bambiPlayer addPrimaryWeaponItem "optic_Nightstalker";
+	 _bambiPlayer addPrimaryWeaponItem _RndmOptic;
 	 _bambiPlayer addItem "NVGoggles_INDEP";
 	 _bambiPlayer assignItem "NVGoggles_INDEP";	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
@@ -745,7 +786,8 @@ switch (true) do
 	 _bambiPlayer addHeadgear "H_HelmetLeaderO_ocamo";
 	 [_bambiPlayer,_Tier4PrimaryWeapons,5] call bis_fnc_addWeapon;
 	 _bambiPlayer addPrimaryWeaponItem "acc_pointer_IR";
-	 _bambiPlayer addPrimaryWeaponItem "optic_Nightstalker";
+	 _bambiPlayer addPrimaryWeaponItem _RndmOptic;
+	 _bambiPlayer addPrimaryWeaponItem _Tier4Suppressors;	 
 	 _bambiPlayer addItem "NVGoggles_INDEP";
 	 _bambiPlayer assignItem "NVGoggles_INDEP";	 
 	 _bambiPlayer addWeapon "Exile_Item_XM8";
