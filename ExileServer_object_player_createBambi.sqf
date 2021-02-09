@@ -255,7 +255,7 @@ switch (true) do
 //Loadouts by UID place the player UID in "PlacePlayerUIDHere" inside the quotations.
 
 //UID Loadout 1												//Wullf
-        if ((getPlayerUID _requestingPlayer) isEqualTo ("76561198144781827"))exitWith 
+        if ((getPlayerUID _requestingPlayer) isEqualTo (PlacePlayerUIDHere))exitWith 
         {
 			clearWeaponCargo _bambiPlayer; 
 			clearMagazineCargo _bambiPlayer;
@@ -344,7 +344,7 @@ switch (true) do
         };	
 		
 //UID Loadout 3												//Mattidg
-        if ((getPlayerUID _requestingPlayer) isEqualTo ("76561198048329359"))exitWith 
+        if ((getPlayerUID _requestingPlayer) isEqualTo ("PlacePlayerUIDHere"))exitWith 
         {
 			clearWeaponCargo _bambiPlayer; 
 			clearMagazineCargo _bambiPlayer;
@@ -446,7 +446,7 @@ switch (true) do
         };	
 
 //UID Loadout 4											//Barnacle Bill
-        if ((getPlayerUID _requestingPlayer) isEqualTo ("76561198967712934"))exitWith 
+        if ((getPlayerUID _requestingPlayer) isEqualTo ("PlacePlayerUIDHere"))exitWith 
         {
 			clearWeaponCargo _bambiPlayer; 
 			clearMagazineCargo _bambiPlayer;
@@ -478,7 +478,7 @@ switch (true) do
         };	
 
 //UID Loadout 5												//Titan
-        if ((getPlayerUID _requestingPlayer) isEqualTo ("76561198118029205"))exitWith 
+        if ((getPlayerUID _requestingPlayer) isEqualTo ("PlacePlayerUIDHere"))exitWith 
         {
 			clearWeaponCargo _bambiPlayer; 
 			clearMagazineCargo _bambiPlayer;
@@ -517,7 +517,7 @@ switch (true) do
         };	
 		
 //UID Loadout 6												//jason
-        if ((getPlayerUID _requestingPlayer) isEqualTo ("76561198146392679"))exitWith 
+        if ((getPlayerUID _requestingPlayer) isEqualTo ("PlacePlayerUIDHere"))exitWith 
         {
 			clearWeaponCargo _bambiPlayer; 
 			clearMagazineCargo _bambiPlayer;
@@ -573,7 +573,7 @@ switch (true) do
         };	
 		
 //UID Loadout 7												//Orient
-        if ((getPlayerUID _requestingPlayer) isEqualTo ("76561198272897606"))exitWith 
+        if ((getPlayerUID _requestingPlayer) isEqualTo ("PlacePlayerUIDHere"))exitWith 
         {
 			clearWeaponCargo _bambiPlayer; 
 			clearMagazineCargo _bambiPlayer;
@@ -623,7 +623,7 @@ switch (true) do
         };	
 
 //UID Loadout 8												//joshu
-        if ((getPlayerUID _requestingPlayer) isEqualTo ("76561198272335172"))exitWith 
+        if ((getPlayerUID _requestingPlayer) isEqualTo ("PlacePlayerUIDHere"))exitWith 
         {
 			clearWeaponCargo _bambiPlayer; 
 			clearMagazineCargo _bambiPlayer;
@@ -666,7 +666,7 @@ switch (true) do
         };	
 
 //UID Loadout 9												//fecker
-        if ((getPlayerUID _requestingPlayer) isEqualTo ("76561198060159124"))exitWith 
+        if ((getPlayerUID _requestingPlayer) isEqualTo ("PlacePlayerUIDHere"))exitWith 
         {
 			clearWeaponCargo _bambiPlayer; 
 			clearMagazineCargo _bambiPlayer;
