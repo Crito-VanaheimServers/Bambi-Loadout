@@ -1,6 +1,9 @@
 # Bambi-Loadout
 By Crito 11/27/2020
 
+If you use this you will need Exad's Halo Parachute function. A stand alone version of this funtion can
+be found in my XM8 Apps Compilation here on my github.
+
 Loadout script with player UID's or respect based with randomized weapon tiers and attachments.
 
 INSTALLATION:
